@@ -233,9 +233,10 @@ document.getElementById('scrollTopBtn')?.addEventListener('click', () => {
 // ── 9. Contact Form — EmailJS Integration ─────────────────────
 (function initContactForm() {
   // ── EmailJS credentials ── fill these in after setting up at emailjs.com ──
-  const EMAILJS_PUBLIC_KEY  = 'fsOn_1gzYYiMSmyZA';  // ✅ Account → API Keys
-  const EMAILJS_SERVICE_ID  = 'service_tfk5zbv';     // ✅ Email Services
-  const EMAILJS_TEMPLATE_ID = 'template_qnzilrj';    // ✅ Email Templates
+  const EMAILJS_PUBLIC_KEY       = 'fsOn_1gzYYiMSmyZA';  // ✅ Account → API Keys
+  const EMAILJS_SERVICE_ID       = 'service_tfk5zbv';     // ✅ Email Services
+  const EMAILJS_TEMPLATE_ID      = 'template_qnzilrj';    // ✅ Contact Us template
+  const EMAILJS_AUTOREPLY_ID     = 'template_e6a3yev';    // ✅ Auto-Reply template
 
   // Initialise EmailJS with your public key
   emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
@@ -327,15 +328,20 @@ document.getElementById('scrollTopBtn')?.addEventListener('click', () => {
     };
 
     console.log('[EmailJS] Sending with params:', templateParams);
-    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-      .then((response) => {
-        console.log('[EmailJS] SUCCESS:', response.status, response.text);
-        // Success
+
+    // Send both emails in parallel: notification to you + auto-reply to sender
+    Promise.all([
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams),
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_AUTOREPLY_ID, templateParams)
+    ])
+      .then(([mainRes, replyRes]) => {
+        console.log('[EmailJS] Contact notification sent:', mainRes.status);
+        console.log('[EmailJS] Auto-reply sent:', replyRes.status);
         btn.disabled        = false;
         btnText.textContent = 'Send Message';
         form.reset();
-        successEl.textContent    = '✅ Message sent! I\'ll get back to you within 24 hours.';
-        successEl.style.display  = 'block';
+        successEl.textContent   = '✅ Message sent! I\'ll get back to you within 24 hours.';
+        successEl.style.display = 'block';
         successEl.classList.add('form-success--ok');
         setTimeout(() => { successEl.style.display = 'none'; }, 7000);
       })
