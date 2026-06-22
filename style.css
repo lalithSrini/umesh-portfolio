@@ -901,6 +901,16 @@ ul { list-style: none; }
   letter-spacing: 0.05em;
 }
 .cert-year { font-size: 0.78rem; color: var(--text-dim); }
+.cert-verify {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--warning);
+  letter-spacing: 0.04em;
+  margin-left: auto;
+  transition: var(--transition);
+}
+.cert-card:hover .cert-verify { color: #FBBF24; transform: translateX(3px); display: inline-block; }
+a.cert-card { text-decoration: none; color: inherit; display: flex; }
 
 /* ── 11. TIMELINE ─────────────────────────────────────────── */
 .experience-section { background: var(--dark-2); }
@@ -1367,6 +1377,11 @@ ul { list-style: none; }
   font-size: 0.875rem;
   font-weight: 500;
   display: none;
+}
+.form-success--err {
+  background: rgba(239,68,68,0.1);
+  border-color: rgba(239,68,68,0.3);
+  color: var(--danger);
 }
 
 /* ── 17. FOOTER ───────────────────────────────────────────── */

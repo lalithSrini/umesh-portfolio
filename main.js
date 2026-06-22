@@ -230,16 +230,24 @@ document.getElementById('scrollTopBtn')?.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ── 9. Contact Form Validation ────────────────────────────────
+// ── 9. Contact Form — EmailJS Integration ─────────────────────
 (function initContactForm() {
+  // ── EmailJS credentials ── fill these in after setting up at emailjs.com ──
+  const EMAILJS_PUBLIC_KEY  = 'fsOn_1gzYYiMSmyZA';  // ✅ Account → API Keys
+  const EMAILJS_SERVICE_ID  = 'service_tfk5zbv';     // ✅ Email Services
+  const EMAILJS_TEMPLATE_ID = 'template_qnzilrj';    // ✅ Email Templates
+
+  // Initialise EmailJS with your public key
+  emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
   const form = document.getElementById('contactForm');
   if (!form) return;
 
   const fields = {
-    contactName: { errorId: 'nameError', label: 'Name', minLen: 2 },
-    contactEmailInput: { errorId: 'emailError', label: 'Email', isEmail: true },
-    contactSubject: { errorId: 'subjectError', label: 'Subject', minLen: 3 },
-    contactMessage: { errorId: 'messageError', label: 'Message', minLen: 20 }
+    contactName:       { errorId: 'nameError',    label: 'Name',    minLen: 2 },
+    contactEmailInput: { errorId: 'emailError',   label: 'Email',   isEmail: true },
+    contactSubject:    { errorId: 'subjectError', label: 'Subject', minLen: 3 },
+    contactMessage:    { errorId: 'messageError', label: 'Message', minLen: 20 }
   };
 
   function showError(errorEl, input, msg) {
@@ -256,9 +264,9 @@ document.getElementById('scrollTopBtn')?.addEventListener('click', () => {
   }
 
   function validateField(fieldId, opts) {
-    const input = document.getElementById(fieldId);
+    const input   = document.getElementById(fieldId);
     const errorEl = document.getElementById(opts.errorId);
-    const value = input.value.trim();
+    const value   = input.value.trim();
 
     if (!value) {
       showError(errorEl, input, `${opts.label} is required.`);
@@ -276,11 +284,11 @@ document.getElementById('scrollTopBtn')?.addEventListener('click', () => {
     return true;
   }
 
-  // Real-time validation on blur
+  // Real-time validation on blur / input
   Object.entries(fields).forEach(([id, opts]) => {
     const input = document.getElementById(id);
     if (input) {
-      input.addEventListener('blur', () => validateField(id, opts));
+      input.addEventListener('blur',  () => validateField(id, opts));
       input.addEventListener('input', () => {
         const errorEl = document.getElementById(opts.errorId);
         if (errorEl.textContent) validateField(id, opts);
@@ -290,30 +298,56 @@ document.getElementById('scrollTopBtn')?.addEventListener('click', () => {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    let valid = true;
 
+    // Run all field validations
+    let valid = true;
     Object.entries(fields).forEach(([id, opts]) => {
       if (!validateField(id, opts)) valid = false;
     });
-
     if (!valid) return;
 
-    // Simulate submission
-    const btn = document.getElementById('submitFormBtn');
-    const btnText = btn.querySelector('.btn-text');
+    const btn       = document.getElementById('submitFormBtn');
+    const btnText   = btn.querySelector('.btn-text');
     const successEl = document.getElementById('formSuccess');
 
-    btn.disabled = true;
-    btnText.textContent = 'Sending…';
+    // Loading state
+    btn.disabled         = true;
+    btnText.textContent  = 'Sending…';
+    successEl.style.display = 'none';
+    successEl.className  = 'form-success';
 
-    setTimeout(() => {
-      btn.disabled = false;
-      btnText.textContent = 'Send Message';
-      form.reset();
-      successEl.textContent = '✅ Thank you! Your message has been received. I\'ll get back to you within 24 hours.';
-      successEl.style.display = 'block';
-      setTimeout(() => { successEl.style.display = 'none'; }, 6000);
-    }, 1800);
+    // Variable names match your EmailJS template placeholders exactly
+    const now = new Date();
+    const templateParams = {
+      name:    document.getElementById('contactName').value.trim(),
+      email:   document.getElementById('contactEmailInput').value.trim(),
+      title:   document.getElementById('contactSubject').value.trim(),
+      message: document.getElementById('contactMessage').value.trim(),
+      time:    now.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })
+    };
+
+    console.log('[EmailJS] Sending with params:', templateParams);
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+      .then((response) => {
+        console.log('[EmailJS] SUCCESS:', response.status, response.text);
+        // Success
+        btn.disabled        = false;
+        btnText.textContent = 'Send Message';
+        form.reset();
+        successEl.textContent    = '✅ Message sent! I\'ll get back to you within 24 hours.';
+        successEl.style.display  = 'block';
+        successEl.classList.add('form-success--ok');
+        setTimeout(() => { successEl.style.display = 'none'; }, 7000);
+      })
+      .catch((error) => {
+        console.error('[EmailJS] FAILED:', error);
+        btn.disabled        = false;
+        btnText.textContent = 'Send Message';
+        successEl.textContent   = '❌ Something went wrong. Please email me directly at kvuc2021@gmail.com';
+        successEl.style.display = 'block';
+        successEl.classList.add('form-success--err');
+        setTimeout(() => { successEl.style.display = 'none'; }, 8000);
+      });
   });
 })();
 
