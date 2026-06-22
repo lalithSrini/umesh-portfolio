@@ -103,7 +103,6 @@
     'Java Developer',
     'AWS Cloud Engineer',
     'Full Stack Developer',
-    'Cloud Architect',
     'Microservices Expert',
     'Spring Boot Engineer'
   ];
