@@ -895,7 +895,6 @@
       </div>
       <p class="login-error" id="loginError"></p>
       <button class="btn-login" id="loginBtn" onclick="doLogin()">Sign In →</button>
-      <p class="login-hint" id="loginHint"></p>
     </div>
   </div>
 
@@ -1209,11 +1208,13 @@
               <p>2. Click <strong style="color:var(--accent)">💾 Save Changes</strong> (or press <kbd
                   style="background:rgba(255,255,255,0.1);padding:1px 6px;border-radius:4px;">Ctrl+S</kbd>).</p>
               <p>3. 🔴 <strong style="color:#10B981">Live Update:</strong> If your portfolio is open in another tab, it
-                <strong style="color:var(--text)">automatically re-renders</strong> — no refresh needed!</p>
+                <strong style="color:var(--text)">automatically re-renders</strong> — no refresh needed!
+              </p>
               <p>4. Click <strong style="color:var(--accent3)">🔍 Preview Portfolio</strong> in the sidebar to open and
                 auto-refresh the portfolio tab.</p>
               <p>5. Click <strong style="color:var(--success)">⬇ Export JSON</strong> → replace
-                <code>portfolio-data.json</code> in your project folder to make changes permanent for all visitors.</p>
+                <code>portfolio-data.json</code> in your project folder to make changes permanent for all visitors.
+              </p>
             </div>
           </div>
         </div>
@@ -1289,11 +1290,6 @@
     }
 
     function checkAuth() {
-      // First visit — show hint
-      if (!localStorage.getItem(PASS_STORAGE_KEY) && !localStorage.getItem('vuk-admin-user')) {
-        document.getElementById('loginHint').innerHTML =
-          'Default: username <span>admin</span> / password <span>admin123</span>';
-      }
       if (localStorage.getItem(AUTH_STORAGE_KEY) === '1') {
         showAdminApp();
       }
