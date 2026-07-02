@@ -1,0 +1,357 @@
+{
+  "meta": {
+    "title": "Venkata Umesh Khande | Senior Java Full Stack Developer",
+    "description": "Venkata Umesh Khande – Senior Java Full Stack Developer & AWS Certified Cloud Engineer with 8+ years building scalable, cloud-native enterprise systems.",
+    "keywords": "Java Developer, Full Stack Developer, AWS, Spring Boot, Microservices, Cloud Engineer, Portfolio",
+    "author": "Venkata Umesh Khande",
+    "ogTitle": "Venkata Umesh Khande | Senior Java Full Stack Developer",
+    "ogDescription": "AWS Certified Cloud Engineer with 8+ years of enterprise experience."
+  },
+  "hero": {
+    "badge": "Available for Opportunities",
+    "firstName": "Venkata Umesh",
+    "lastName": "Khande",
+    "titleStatic": "Senior ",
+    "typedWords": [
+      "Java Developer",
+      "AWS Cloud Engineer",
+      "Full Stack Developer",
+      "Microservices Expert",
+      "Spring Boot Engineer"
+    ],
+    "tagline": "AWS Certified Cloud Engineer &nbsp;·&nbsp; 8+ Years Experience",
+    "description": "Building scalable cloud-native enterprise systems with <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>AWS</strong> and <strong>Microservices</strong>.",
+    "resumeUrl": "https://drive.google.com/file/d/17NFt915GDX4zk2Puw-pbr5C6R4BvSXYM/view?usp=sharing",
+    "techStack": [
+      { "emoji": "☕", "name": "Java" },
+      { "emoji": "🌿", "name": "Spring Boot" },
+      { "emoji": "☁️", "name": "AWS" },
+      { "emoji": "🐳", "name": "Docker" },
+      { "emoji": "⚙️", "name": "Kubernetes" },
+      { "emoji": "⚛️", "name": "React" },
+      { "emoji": "📨", "name": "Kafka" }
+    ],
+    "orbitInner": [
+      { "emoji": "☕", "tip": "Java", "angle": "0deg" },
+      { "emoji": "☁️", "tip": "AWS", "angle": "90deg" },
+      { "emoji": "🌿", "tip": "Spring", "angle": "180deg" },
+      { "emoji": "🐳", "tip": "Docker", "angle": "270deg" }
+    ],
+    "orbitOuter": [
+      { "emoji": "⚙️", "tip": "Kubernetes", "angle": "45deg" },
+      { "emoji": "📨", "tip": "Kafka", "angle": "117deg" },
+      { "emoji": "⚛️", "tip": "React", "angle": "189deg" },
+      { "emoji": "🅰️", "tip": "Angular", "angle": "261deg" },
+      { "emoji": "◈", "tip": "GraphQL", "angle": "333deg" }
+    ],
+    "chips": [
+      { "value": "8+", "label": "Years", "pos": "tl" },
+      { "value": "AWS", "label": "Certified", "pos": "tr" },
+      { "value": "100+", "label": "Microservices", "pos": "bl" },
+      { "value": "Java 21", "label": "Expert", "pos": "br" }
+    ]
+  },
+  "about": {
+    "initials": "VUK",
+    "status": "Open to Work",
+    "infoItems": [
+      { "icon": "📍", "text": "United States" },
+      { "icon": "💼", "text": "Senior Java Full Stack Developer" },
+      { "icon": "🎓", "text": "M.S. Computer and Information Sciences" },
+      { "icon": "☁️", "text": "AWS Certified – Solutions Architect & Developer" }
+    ],
+    "paragraphs": [
+      "Experienced <strong>Full Stack Developer</strong> with <strong>8+ years of expertise</strong> in designing, developing and deploying enterprise-grade applications using <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Microservices</strong> and <strong>AWS</strong>.",
+      "Specialized in <strong>cloud-native architectures</strong>, event-driven systems, <strong>GraphQL APIs</strong>, containerized deployments and <strong>AI-assisted development</strong>.",
+      "Passionate about building scalable, high-performance solutions that drive business value across the financial and enterprise sectors."
+    ],
+    "highlights": [
+      { "emoji": "🏦", "label": "Fintech Expert" },
+      { "emoji": "☁️", "label": "Cloud Native" },
+      { "emoji": "🤖", "label": "AI-Assisted Dev" },
+      { "emoji": "⚡", "label": "High Performance" }
+    ]
+  },
+  "stats": [
+    { "value": 8, "suffix": "+", "label": "Years Experience", "icon": "🚀" },
+    { "value": 6, "suffix": "+", "label": "Enterprise Clients", "icon": "🏢" },
+    { "value": 20, "suffix": "+", "label": "Technologies", "icon": "⚙️" },
+    { "value": 100, "suffix": "+", "label": "Microservices Delivered", "icon": "🔧" }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "icon": "💻",
+        "name": "Languages",
+        "tags": [
+          { "name": "Java", "tier": 1 },
+          { "name": "J2EE", "tier": 1 },
+          { "name": "TypeScript", "tier": 1 },
+          { "name": "JavaScript", "tier": 1 },
+          { "name": "SQL", "tier": 2 },
+          { "name": "HTML5", "tier": 2 },
+          { "name": "CSS3", "tier": 2 }
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "name": "Backend",
+        "tags": [
+          { "name": "Spring Boot", "tier": 1 },
+          { "name": "Spring MVC", "tier": 1 },
+          { "name": "Spring Data JPA", "tier": 1 },
+          { "name": "Hibernate", "tier": 1 },
+          { "name": "REST APIs", "tier": 2 },
+          { "name": "GraphQL", "tier": 2 },
+          { "name": "Kafka", "tier": 2 }
+        ]
+      },
+      {
+        "icon": "🎨",
+        "name": "Frontend",
+        "tags": [
+          { "name": "Angular", "tier": 1 },
+          { "name": "React", "tier": 1 },
+          { "name": "Next.js", "tier": 1 },
+          { "name": "NgRx", "tier": 2 },
+          { "name": "Bootstrap", "tier": 2 }
+        ]
+      },
+      {
+        "icon": "☁️",
+        "name": "Cloud (AWS)",
+        "tags": [
+          { "name": "EC2", "tier": 1 },
+          { "name": "S3", "tier": 1 },
+          { "name": "Lambda", "tier": 1 },
+          { "name": "API Gateway", "tier": 1 },
+          { "name": "DynamoDB", "tier": 2 },
+          { "name": "SNS / SQS", "tier": 2 },
+          { "name": "CloudWatch", "tier": 2 },
+          { "name": "EKS", "tier": 2 }
+        ]
+      },
+      {
+        "icon": "🛠️",
+        "name": "DevOps",
+        "tags": [
+          { "name": "Docker", "tier": 1 },
+          { "name": "Kubernetes", "tier": 1 },
+          { "name": "Jenkins", "tier": 1 },
+          { "name": "Git", "tier": 2 },
+          { "name": "Bitbucket", "tier": 2 },
+          { "name": "Terraform", "tier": 2 }
+        ]
+      }
+    ],
+    "proficiency": [
+      { "name": "Java / Spring Boot", "pct": 95, "color": "#2563EB" },
+      { "name": "AWS", "pct": 95, "color": "#F59E0B" },
+      { "name": "Angular", "pct": 90, "color": "#EF4444" },
+      { "name": "React / Next.js", "pct": 85, "color": "#06B6D4" },
+      { "name": "DevOps", "pct": 85, "color": "#8B5CF6" }
+    ]
+  },
+  "certifications": [
+    {
+      "icon": "☁️",
+      "type": "Solutions Architect",
+      "title": "AWS Certified Solutions Architect",
+      "subtitle": "Associate Level",
+      "code": "SAA-C03",
+      "validity": "Valid through 2026",
+      "badgeUrl": "https://www.credly.com/badges/bb37c0d2-379b-4ae3-aeec-8d62e234b5a5/linked_in_profile"
+    },
+    {
+      "icon": "💻",
+      "type": "Developer",
+      "title": "AWS Certified Developer",
+      "subtitle": "Associate Level",
+      "code": "DVA-C02",
+      "validity": "Valid through 2026",
+      "badgeUrl": "https://www.credly.com/badges/55b5096a-b55e-40a7-9f67-27e99e7e48ab/linked_in_profile"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "logoText": "DFS",
+      "logoClass": "discover",
+      "company": "Discover Financial Services",
+      "role": "Java Developer",
+      "startDate": "2025",
+      "endDate": "Present",
+      "current": true,
+      "tags": ["Java 21", "Spring Boot", "React", "Next.js", "GraphQL", "Kafka", "PostgreSQL"],
+      "bullets": [
+        "Developed high-performance microservices using Java 21 and Spring Boot for financial transaction processing",
+        "Architected GraphQL APIs consumed by React/Next.js frontends handling millions of daily requests",
+        "Implemented event-driven architecture with Kafka for real-time data streaming pipelines"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "logoText": "FMC",
+      "logoClass": "freddie",
+      "company": "Freddie Mac",
+      "role": "Java Full Stack Developer",
+      "startDate": "2024",
+      "endDate": "2025",
+      "current": false,
+      "tags": ["Java", "Spring Boot", "Angular", "AWS", "Docker", "Kubernetes"],
+      "bullets": [
+        "Built cloud-native mortgage processing systems on AWS EKS with containerized Spring Boot services",
+        "Developed Angular-based enterprise dashboards for risk and compliance monitoring",
+        "Optimized database performance with Spring Data JPA and Hibernate for large-scale datasets"
+      ]
+    },
+    {
+      "id": "exp-3",
+      "logoText": "JPM",
+      "logoClass": "jpm",
+      "company": "JP Morgan Chase",
+      "role": "Software Engineer",
+      "startDate": "2023",
+      "endDate": "2023",
+      "current": false,
+      "tags": ["Java", "Microservices", "REST APIs", "AWS", "Jenkins"],
+      "bullets": [
+        "Delivered mission-critical banking microservices with strict security and compliance standards",
+        "Implemented CI/CD pipelines with Jenkins reducing deployment time by 40%",
+        "Collaborated with cross-functional teams to deliver high-availability financial APIs"
+      ]
+    },
+    {
+      "id": "exp-4",
+      "logoText": "FID",
+      "logoClass": "fidelity",
+      "company": "Fidelity Investments",
+      "role": "Java Full Stack Developer",
+      "startDate": "2021",
+      "endDate": "2023",
+      "current": false,
+      "tags": ["Java", "Spring Boot", "Angular", "AWS", "Hibernate", "Oracle"],
+      "bullets": [
+        "Architected and delivered full-stack investment management platform serving 500K+ clients",
+        "Migrated legacy systems to cloud-native microservices on AWS, reducing operational costs by 30%",
+        "Led API design and implementation for trading and portfolio management modules"
+      ]
+    },
+    {
+      "id": "exp-5",
+      "logoText": "CT",
+      "logoClass": "cloud-tech",
+      "company": "Cloud Tech",
+      "role": "Software Engineer",
+      "startDate": "2018",
+      "endDate": "2021",
+      "current": false,
+      "tags": ["Java", "J2EE", "Spring MVC", "REST APIs", "SQL"],
+      "bullets": [
+        "Built and maintained enterprise Java applications with Spring MVC and J2EE",
+        "Developed RESTful APIs for integration with third-party enterprise systems",
+        "Contributed to Agile sprints delivering full-stack features across web and API layers"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "icon": "🏦",
+      "title": "Enterprise Banking Platform",
+      "description": "Scalable microservices platform for real-time transaction processing with event-driven architecture, API Gateway, OAuth2 security, and end-to-end observability.",
+      "featured": true,
+      "features": [
+        "Microservices Architecture",
+        "API Gateway & Auth",
+        "Real-Time Processing",
+        "99.99% Uptime SLA"
+      ],
+      "tags": ["Java", "Spring Boot", "Kafka", "AWS", "React"],
+      "link": "#"
+    },
+    {
+      "id": "proj-2",
+      "icon": "☁️",
+      "title": "Cloud Native Customer Management",
+      "description": "Kubernetes-orchestrated CRM system with GraphQL APIs, auto-scaling, DynamoDB persistence, and real-time analytics dashboard for enterprise clients.",
+      "featured": false,
+      "features": [
+        "Container Orchestration",
+        "GraphQL API Layer",
+        "Auto-Scaling",
+        "Real-Time Analytics"
+      ],
+      "tags": ["AWS", "Docker", "Kubernetes", "GraphQL"],
+      "link": "#"
+    },
+    {
+      "id": "proj-3",
+      "icon": "🛡️",
+      "title": "Risk & Compliance Management Platform",
+      "description": "Enterprise compliance monitoring system with automated risk assessment workflows, audit trail logging, and regulatory reporting dashboards for financial institutions.",
+      "featured": false,
+      "features": [
+        "Risk Assessment Engine",
+        "Audit Trail Logging",
+        "Regulatory Reports",
+        "Role-Based Access"
+      ],
+      "tags": ["Spring Boot", "Hibernate", "Oracle", "REST API"],
+      "link": "#"
+    }
+  ],
+  "cloud": {
+    "icons": [
+      { "emoji": "☁️", "name": "AWS", "tooltip": "Amazon Web Services", "class": "aws-icon" },
+      { "emoji": "🐳", "name": "Docker", "tooltip": "Docker Containers", "class": "docker-icon" },
+      { "emoji": "⚙️", "name": "Kubernetes", "tooltip": "Kubernetes Orchestration", "class": "k8s-icon" },
+      { "emoji": "🏗️", "name": "Terraform", "tooltip": "Infrastructure as Code", "class": "tf-icon" },
+      { "emoji": "🔧", "name": "Jenkins", "tooltip": "CI/CD Pipelines", "class": "jenkins-icon" },
+      { "emoji": "📨", "name": "Kafka", "tooltip": "Event Streaming", "class": "kafka-icon" }
+    ],
+    "bars": [
+      { "name": "AWS", "pct": 95, "color": "#F59E0B" },
+      { "name": "Java", "pct": 95, "color": "#2563EB" },
+      { "name": "Spring Boot", "pct": 95, "color": "#10B981" },
+      { "name": "React", "pct": 85, "color": "#06B6D4" },
+      { "name": "Angular", "pct": 90, "color": "#EF4444" },
+      { "name": "DevOps", "pct": 85, "color": "#8B5CF6" }
+    ]
+  },
+  "education": [
+    {
+      "id": "edu-1",
+      "icon": "🎓",
+      "badge": "Master of Science",
+      "degree": "Computer and Information Sciences",
+      "school": "Southern University and A&M College",
+      "startYear": "2021",
+      "endYear": "2022"
+    },
+    {
+      "id": "edu-2",
+      "icon": "🏫",
+      "badge": "Bachelor of Engineering",
+      "degree": "Computer Science and Engineering",
+      "school": "Sathyabama University",
+      "startYear": "2015",
+      "endYear": "2019"
+    }
+  ],
+  "contact": {
+    "heading": "Let's Build Something Amazing",
+    "text": "I'm actively seeking Senior Java / Full Stack Developer roles at innovative companies. If you're looking for an engineer who ships scalable, cloud-native enterprise systems — let's talk.",
+    "phone": "(609) 721-2009",
+    "phoneHref": "tel:+16097212009",
+    "email": "kvuc2021@gmail.com",
+    "linkedinUrl": "https://www.linkedin.com/in/venkata-u-khande-052477254/",
+    "linkedinLabel": "venkata-umesh-khande"
+  },
+  "footer": {
+    "initials": "VUK",
+    "name": "Venkata Umesh Khande",
+    "tagline": "Senior Java Full Stack Developer · AWS Certified",
+    "copyYear": "2025"
+  }
+}

@@ -37,7 +37,7 @@
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
           <span class="theme-icon" id="themeIcon">☀️</span>
         </button>
-        <a href="https://drive.google.com/file/d/17NFt915GDX4zk2Puw-pbr5C6R4BvSXYM/view?usp=sharing" class="btn-resume" id="resumeBtn" target="_blank" rel="noopener noreferrer" aria-label="View Resume">
+        <a href="#" class="btn-resume hero-resume-btn" id="resumeBtn" target="_blank" rel="noopener noreferrer" aria-label="View Resume">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Resume
         </a>
@@ -56,24 +56,24 @@
     <div class="hero-orb hero-orb-3"></div>
     <div class="container hero-container">
       <div class="hero-content">
-        <div class="hero-badge">
+        <div class="hero-badge" id="heroBadge">
           <span class="badge-dot"></span>
           Available for Opportunities
         </div>
-        <h1 class="hero-name">Venkata Umesh<br /><span class="name-highlight">Khande</span></h1>
+        <h1 class="hero-name" id="heroName">Venkata Umesh<br /><span class="name-highlight">Khande</span></h1>
         <div class="hero-title-wrapper">
-          <span class="hero-title-static">Senior </span>
+          <span class="hero-title-static" id="heroTitleStatic">Senior </span>
           <span class="hero-typed" id="heroTyped" aria-live="polite"></span>
           <span class="cursor-blink">|</span>
         </div>
-        <p class="hero-tagline">
+        <p class="hero-tagline" id="heroTagline">
           AWS Certified Cloud Engineer &nbsp;·&nbsp; 8+ Years Experience
         </p>
-        <p class="hero-description">
+        <p class="hero-description" id="heroDescription">
           Building scalable cloud-native enterprise systems with <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>AWS</strong> and <strong>Microservices</strong>.
         </p>
         <div class="hero-cta">
-          <a href="https://drive.google.com/file/d/17NFt915GDX4zk2Puw-pbr5C6R4BvSXYM/view?usp=sharing" class="btn btn-primary" id="heroDownloadBtn" target="_blank" rel="noopener noreferrer">
+          <a href="#" class="btn btn-primary hero-resume-btn" id="heroDownloadBtn" target="_blank" rel="noopener noreferrer">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download Resume
           </a>
@@ -88,7 +88,7 @@
         </div>
         <div class="hero-tech-stack">
           <span class="tech-label">Tech Stack:</span>
-          <div class="tech-badges">
+          <div class="tech-badges" id="heroBadges">
             <span class="tech-badge" style="--delay:0.1s">☕ Java</span>
             <span class="tech-badge" style="--delay:0.2s">🌿 Spring Boot</span>
             <span class="tech-badge" style="--delay:0.3s">☁️ AWS</span>
@@ -111,14 +111,14 @@
             </div>
           </div>
           <!-- Inner orbit -->
-          <div class="orbit-ring orbit-ring-1">
+          <div class="orbit-ring orbit-ring-1" id="orbitRing1">
             <div class="orbit-node on-1" style="--a:0deg"    data-tip="Java">☕</div>
             <div class="orbit-node on-2" style="--a:90deg"   data-tip="AWS">☁️</div>
             <div class="orbit-node on-3" style="--a:180deg"  data-tip="Spring">🌿</div>
             <div class="orbit-node on-4" style="--a:270deg"  data-tip="Docker">🐳</div>
           </div>
           <!-- Outer orbit -->
-          <div class="orbit-ring orbit-ring-2">
+          <div class="orbit-ring orbit-ring-2" id="orbitRing2">
             <div class="orbit-node on-5"  style="--a:45deg"  data-tip="Kubernetes">⚙️</div>
             <div class="orbit-node on-6"  style="--a:117deg" data-tip="Kafka">📨</div>
             <div class="orbit-node on-7"  style="--a:189deg" data-tip="React">⚛️</div>
@@ -126,7 +126,7 @@
             <div class="orbit-node on-9"  style="--a:333deg" data-tip="GraphQL">◈</div>
           </div>
           <!-- Stat chips around visual -->
-          <div class="orbit-stat-chips">
+          <div class="orbit-stat-chips" id="orbitChips">
             <div class="orbit-chip chip-tl">
               <span class="chip-val">8+</span>
               <span class="chip-lbl">Years</span>
@@ -167,52 +167,28 @@
             <div class="avatar-ring">
               <div class="avatar-inner">VUK</div>
             </div>
-            <div class="avatar-status">
+            <div class="avatar-status" id="aboutStatus">
               <span class="status-dot"></span> Open to Work
             </div>
           </div>
-          <div class="about-info">
-            <div class="info-item">
-              <span class="info-icon">📍</span>
-              <span>United States</span>
-            </div>
-            <div class="info-item">
-              <span class="info-icon">💼</span>
-              <span>Senior Java Full Stack Developer</span>
-            </div>
-            <div class="info-item">
-              <span class="info-icon">🎓</span>
-              <span>M.S. Computer and Information Sciences</span>
-            </div>
-            <div class="info-item">
-              <span class="info-icon">☁️</span>
-              <span>AWS Certified – Solutions Architect & Developer</span>
-            </div>
+          <div class="about-info" id="aboutInfo">
+            <div class="info-item"><span class="info-icon">📍</span><span>United States</span></div>
+            <div class="info-item"><span class="info-icon">💼</span><span>Senior Java Full Stack Developer</span></div>
+            <div class="info-item"><span class="info-icon">🎓</span><span>M.S. Computer and Information Sciences</span></div>
+            <div class="info-item"><span class="info-icon">☁️</span><span>AWS Certified – Solutions Architect &amp; Developer</span></div>
           </div>
         </div>
         <div class="about-text reveal">
-          <p class="about-para">
-            Experienced <strong>Full Stack Developer</strong> with <strong>8+ years of expertise</strong> in designing, developing and deploying enterprise-grade applications using <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Microservices</strong> and <strong>AWS</strong>.
-          </p>
-          <p class="about-para">
-            Specialized in <strong>cloud-native architectures</strong>, event-driven systems, <strong>GraphQL APIs</strong>, containerized deployments and <strong>AI-assisted development</strong>.
-          </p>
-          <p class="about-para">
-            Passionate about building scalable, high-performance solutions that drive business value across the financial and enterprise sectors.
-          </p>
-          <div class="about-highlights">
-            <div class="highlight-chip">
-              <span>🏦</span> Fintech Expert
-            </div>
-            <div class="highlight-chip">
-              <span>☁️</span> Cloud Native
-            </div>
-            <div class="highlight-chip">
-              <span>🤖</span> AI-Assisted Dev
-            </div>
-            <div class="highlight-chip">
-              <span>⚡</span> High Performance
-            </div>
+          <div id="aboutParagraphs">
+            <p class="about-para">Experienced <strong>Full Stack Developer</strong> with <strong>8+ years of expertise</strong> in designing, developing and deploying enterprise-grade applications using <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Microservices</strong> and <strong>AWS</strong>.</p>
+            <p class="about-para">Specialized in <strong>cloud-native architectures</strong>, event-driven systems, <strong>GraphQL APIs</strong>, containerized deployments and <strong>AI-assisted development</strong>.</p>
+            <p class="about-para">Passionate about building scalable, high-performance solutions that drive business value across the financial and enterprise sectors.</p>
+          </div>
+          <div class="about-highlights" id="aboutHighlights">
+            <div class="highlight-chip"><span>🏦</span> Fintech Expert</div>
+            <div class="highlight-chip"><span>☁️</span> Cloud Native</div>
+            <div class="highlight-chip"><span>🤖</span> AI-Assisted Dev</div>
+            <div class="highlight-chip"><span>⚡</span> High Performance</div>
           </div>
         </div>
       </div>
@@ -222,7 +198,7 @@
   <!-- ========== EXPERIENCE HIGHLIGHTS ========== -->
   <section class="section stats-section" id="stats" aria-label="Experience highlights">
     <div class="container">
-      <div class="stats-grid">
+      <div class="stats-grid" id="statsGrid">
         <div class="stat-card reveal" data-delay="0">
           <div class="stat-number" data-target="8" data-suffix="+">0</div>
           <div class="stat-label">Years Experience</div>
@@ -255,109 +231,10 @@
         <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
         <p class="section-subtitle">Battle-tested across enterprise financial systems</p>
       </div>
-      <div class="skills-grid">
-        <div class="skill-category reveal" data-delay="0">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">💻</span>
-            <h3>Languages</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag tier-1">Java</span>
-            <span class="skill-tag tier-1">J2EE</span>
-            <span class="skill-tag tier-1">TypeScript</span>
-            <span class="skill-tag tier-1">JavaScript</span>
-            <span class="skill-tag tier-2">SQL</span>
-            <span class="skill-tag tier-2">HTML5</span>
-            <span class="skill-tag tier-2">CSS3</span>
-          </div>
-        </div>
-        <div class="skill-category reveal" data-delay="100">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">⚙️</span>
-            <h3>Backend</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag tier-1">Spring Boot</span>
-            <span class="skill-tag tier-1">Spring MVC</span>
-            <span class="skill-tag tier-1">Spring Data JPA</span>
-            <span class="skill-tag tier-1">Hibernate</span>
-            <span class="skill-tag tier-2">REST APIs</span>
-            <span class="skill-tag tier-2">GraphQL</span>
-            <span class="skill-tag tier-2">Kafka</span>
-          </div>
-        </div>
-        <div class="skill-category reveal" data-delay="200">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">🎨</span>
-            <h3>Frontend</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag tier-1">Angular</span>
-            <span class="skill-tag tier-1">React</span>
-            <span class="skill-tag tier-1">Next.js</span>
-            <span class="skill-tag tier-2">NgRx</span>
-            <span class="skill-tag tier-2">Bootstrap</span>
-          </div>
-        </div>
-        <div class="skill-category reveal" data-delay="300">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">☁️</span>
-            <h3>Cloud (AWS)</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag tier-1">EC2</span>
-            <span class="skill-tag tier-1">S3</span>
-            <span class="skill-tag tier-1">Lambda</span>
-            <span class="skill-tag tier-1">API Gateway</span>
-            <span class="skill-tag tier-2">DynamoDB</span>
-            <span class="skill-tag tier-2">SNS / SQS</span>
-            <span class="skill-tag tier-2">CloudWatch</span>
-            <span class="skill-tag tier-2">EKS</span>
-          </div>
-        </div>
-        <div class="skill-category reveal" data-delay="400">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">🛠️</span>
-            <h3>DevOps</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag tier-1">Docker</span>
-            <span class="skill-tag tier-1">Kubernetes</span>
-            <span class="skill-tag tier-1">Jenkins</span>
-            <span class="skill-tag tier-2">Git</span>
-            <span class="skill-tag tier-2">Bitbucket</span>
-            <span class="skill-tag tier-2">Terraform</span>
-          </div>
-        </div>
-        <div class="skill-category reveal" data-delay="500">
-          <div class="skill-cat-header">
-            <span class="skill-cat-icon">📊</span>
-            <h3>Proficiency</h3>
-          </div>
-          <div class="skill-bars">
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Java / Spring Boot</span><span class="skill-pct">95%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95" style="--bar-color: #2563EB"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>AWS</span><span class="skill-pct">95%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95" style="--bar-color: #F59E0B"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Angular</span><span class="skill-pct">90%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90" style="--bar-color: #EF4444"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>React / Next.js</span><span class="skill-pct">85%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85" style="--bar-color: #06B6D4"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>DevOps</span><span class="skill-pct">85%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85" style="--bar-color: #8B5CF6"></div></div>
-            </div>
-          </div>
-        </div>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Rendered by data-loader.js -->
       </div>
+      <!-- Proficiency card rendered separately in the grid by data-loader -->
     </div>
   </section>
 
@@ -369,45 +246,8 @@
         <h2 class="section-title">AWS <span class="gradient-text">Certifications</span></h2>
         <p class="section-subtitle">Industry-recognized cloud credentials</p>
       </div>
-      <div class="certs-grid">
-        <a class="cert-card reveal" data-delay="0" href="https://www.credly.com/badges/bb37c0d2-379b-4ae3-aeec-8d62e234b5a5/linked_in_profile" target="_blank" rel="noopener noreferrer" aria-label="Verify AWS Certified Solutions Architect badge on Credly">
-          <div class="cert-badge">
-            <div class="cert-badge-inner">
-              <span class="cert-aws-logo">☁️</span>
-              <span class="cert-badge-text">AWS</span>
-            </div>
-          </div>
-          <div class="cert-body">
-            <span class="cert-type">Solutions Architect</span>
-            <h3 class="cert-title">AWS Certified Solutions Architect</h3>
-            <p class="cert-subtitle">Associate Level</p>
-            <div class="cert-meta">
-              <span class="cert-code">SAA-C03</span>
-              <span class="cert-year">Valid through 2026</span>
-              <span class="cert-verify">Verify Badge →</span>
-            </div>
-          </div>
-          <div class="cert-shine"></div>
-        </a>
-        <a class="cert-card reveal" data-delay="150" href="https://www.credly.com/badges/55b5096a-b55e-40a7-9f67-27e99e7e48ab/linked_in_profile" target="_blank" rel="noopener noreferrer" aria-label="Verify AWS Certified Developer badge on Credly">
-          <div class="cert-badge">
-            <div class="cert-badge-inner">
-              <span class="cert-aws-logo">💻</span>
-              <span class="cert-badge-text">AWS</span>
-            </div>
-          </div>
-          <div class="cert-body">
-            <span class="cert-type">Developer</span>
-            <h3 class="cert-title">AWS Certified Developer</h3>
-            <p class="cert-subtitle">Associate Level</p>
-            <div class="cert-meta">
-              <span class="cert-code">DVA-C02</span>
-              <span class="cert-year">Valid through 2026</span>
-              <span class="cert-verify">Verify Badge →</span>
-            </div>
-          </div>
-          <div class="cert-shine"></div>
-        </a>
+      <div class="certs-grid" id="certsGrid">
+        <!-- Rendered by data-loader.js -->
       </div>
     </div>
   </section>
@@ -420,173 +260,8 @@
         <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
         <p class="section-subtitle">Enterprise-grade impact across financial institutions</p>
       </div>
-      <div class="timeline">
-
-        <div class="timeline-item reveal" data-delay="0">
-          <div class="timeline-dot">
-            <span class="tl-dot-inner"></span>
-          </div>
-          <div class="timeline-card">
-            <div class="tl-card-header">
-              <div class="tl-company-info">
-                <div class="tl-company-logo discover">DFS</div>
-                <div>
-                  <h3 class="tl-company">Discover Financial Services</h3>
-                  <p class="tl-role">Java Developer</p>
-                </div>
-              </div>
-              <div class="tl-period">
-                <span class="tl-period-badge current">Current</span>
-                <span class="tl-dates">2025 – Present</span>
-              </div>
-            </div>
-            <div class="tl-tags">
-              <span class="tl-tag">Java 21</span>
-              <span class="tl-tag">Spring Boot</span>
-              <span class="tl-tag">React</span>
-              <span class="tl-tag">Next.js</span>
-              <span class="tl-tag">GraphQL</span>
-              <span class="tl-tag">Kafka</span>
-              <span class="tl-tag">PostgreSQL</span>
-            </div>
-            <ul class="tl-bullets">
-              <li>Developed high-performance microservices using Java 21 and Spring Boot for financial transaction processing</li>
-              <li>Architected GraphQL APIs consumed by React/Next.js frontends handling millions of daily requests</li>
-              <li>Implemented event-driven architecture with Kafka for real-time data streaming pipelines</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-delay="100">
-          <div class="timeline-dot">
-            <span class="tl-dot-inner"></span>
-          </div>
-          <div class="timeline-card">
-            <div class="tl-card-header">
-              <div class="tl-company-info">
-                <div class="tl-company-logo freddie">FMC</div>
-                <div>
-                  <h3 class="tl-company">Freddie Mac</h3>
-                  <p class="tl-role">Java Full Stack Developer</p>
-                </div>
-              </div>
-              <div class="tl-period">
-                <span class="tl-dates">2024 – 2025</span>
-              </div>
-            </div>
-            <div class="tl-tags">
-              <span class="tl-tag">Java</span>
-              <span class="tl-tag">Spring Boot</span>
-              <span class="tl-tag">Angular</span>
-              <span class="tl-tag">AWS</span>
-              <span class="tl-tag">Docker</span>
-              <span class="tl-tag">Kubernetes</span>
-            </div>
-            <ul class="tl-bullets">
-              <li>Built cloud-native mortgage processing systems on AWS EKS with containerized Spring Boot services</li>
-              <li>Developed Angular-based enterprise dashboards for risk and compliance monitoring</li>
-              <li>Optimized database performance with Spring Data JPA and Hibernate for large-scale datasets</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-delay="200">
-          <div class="timeline-dot">
-            <span class="tl-dot-inner"></span>
-          </div>
-          <div class="timeline-card">
-            <div class="tl-card-header">
-              <div class="tl-company-info">
-                <div class="tl-company-logo jpm">JPM</div>
-                <div>
-                  <h3 class="tl-company">JP Morgan Chase</h3>
-                  <p class="tl-role">Software Engineer</p>
-                </div>
-              </div>
-              <div class="tl-period">
-                <span class="tl-dates">2023 – 2023</span>
-              </div>
-            </div>
-            <div class="tl-tags">
-              <span class="tl-tag">Java</span>
-              <span class="tl-tag">Microservices</span>
-              <span class="tl-tag">REST APIs</span>
-              <span class="tl-tag">AWS</span>
-              <span class="tl-tag">Jenkins</span>
-            </div>
-            <ul class="tl-bullets">
-              <li>Delivered mission-critical banking microservices with strict security and compliance standards</li>
-              <li>Implemented CI/CD pipelines with Jenkins reducing deployment time by 40%</li>
-              <li>Collaborated with cross-functional teams to deliver high-availability financial APIs</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-delay="300">
-          <div class="timeline-dot">
-            <span class="tl-dot-inner"></span>
-          </div>
-          <div class="timeline-card">
-            <div class="tl-card-header">
-              <div class="tl-company-info">
-                <div class="tl-company-logo fidelity">FID</div>
-                <div>
-                  <h3 class="tl-company">Fidelity Investments</h3>
-                  <p class="tl-role">Java Full Stack Developer</p>
-                </div>
-              </div>
-              <div class="tl-period">
-                <span class="tl-dates">2021 – 2023</span>
-              </div>
-            </div>
-            <div class="tl-tags">
-              <span class="tl-tag">Java</span>
-              <span class="tl-tag">Spring Boot</span>
-              <span class="tl-tag">Angular</span>
-              <span class="tl-tag">AWS</span>
-              <span class="tl-tag">Hibernate</span>
-              <span class="tl-tag">Oracle</span>
-            </div>
-            <ul class="tl-bullets">
-              <li>Architected and delivered full-stack investment management platform serving 500K+ clients</li>
-              <li>Migrated legacy systems to cloud-native microservices on AWS, reducing operational costs by 30%</li>
-              <li>Led API design and implementation for trading and portfolio management modules</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-delay="400">
-          <div class="timeline-dot">
-            <span class="tl-dot-inner"></span>
-          </div>
-          <div class="timeline-card">
-            <div class="tl-card-header">
-              <div class="tl-company-info">
-                <div class="tl-company-logo cloud-tech">CT</div>
-                <div>
-                  <h3 class="tl-company">Cloud Tech</h3>
-                  <p class="tl-role">Software Engineer</p>
-                </div>
-              </div>
-              <div class="tl-period">
-                <span class="tl-dates">2018 – 2021</span>
-              </div>
-            </div>
-            <div class="tl-tags">
-              <span class="tl-tag">Java</span>
-              <span class="tl-tag">J2EE</span>
-              <span class="tl-tag">Spring MVC</span>
-              <span class="tl-tag">REST APIs</span>
-              <span class="tl-tag">SQL</span>
-            </div>
-            <ul class="tl-bullets">
-              <li>Built and maintained enterprise Java applications with Spring MVC and J2EE</li>
-              <li>Developed RESTful APIs for integration with third-party enterprise systems</li>
-              <li>Contributed to Agile sprints delivering full-stack features across web and API layers</li>
-            </ul>
-          </div>
-        </div>
-
+      <div class="timeline" id="experienceTimeline">
+        <!-- Rendered by data-loader.js -->
       </div>
     </div>
   </section>
@@ -599,91 +274,8 @@
         <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
         <p class="section-subtitle">Enterprise-grade systems built for scale and reliability</p>
       </div>
-      <div class="projects-grid">
-
-        <div class="project-card reveal featured-project" data-delay="0">
-          <div class="project-card-inner">
-            <div class="project-header">
-              <div class="project-icon">🏦</div>
-              <div class="project-links">
-                <a href="#" class="project-link-btn" aria-label="View Enterprise Banking Platform project" title="Enterprise Banking Platform">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </div>
-            </div>
-            <div class="project-label">Featured</div>
-            <h3 class="project-title">Enterprise Banking Platform</h3>
-            <p class="project-desc">Scalable microservices platform for real-time transaction processing with event-driven architecture, API Gateway, OAuth2 security, and end-to-end observability.</p>
-            <ul class="project-features">
-              <li>✅ Microservices Architecture</li>
-              <li>✅ API Gateway & Auth</li>
-              <li>✅ Real-Time Processing</li>
-              <li>✅ 99.99% Uptime SLA</li>
-            </ul>
-            <div class="project-tags">
-              <span class="p-tag">Java</span>
-              <span class="p-tag">Spring Boot</span>
-              <span class="p-tag">Kafka</span>
-              <span class="p-tag">AWS</span>
-              <span class="p-tag">React</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card reveal" data-delay="150">
-          <div class="project-card-inner">
-            <div class="project-header">
-              <div class="project-icon">☁️</div>
-              <div class="project-links">
-                <a href="#" class="project-link-btn" aria-label="View Cloud Native Customer Management project" title="Cloud Native Customer Management">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-title">Cloud Native Customer Management</h3>
-            <p class="project-desc">Kubernetes-orchestrated CRM system with GraphQL APIs, auto-scaling, DynamoDB persistence, and real-time analytics dashboard for enterprise clients.</p>
-            <ul class="project-features">
-              <li>✅ Container Orchestration</li>
-              <li>✅ GraphQL API Layer</li>
-              <li>✅ Auto-Scaling</li>
-              <li>✅ Real-Time Analytics</li>
-            </ul>
-            <div class="project-tags">
-              <span class="p-tag">AWS</span>
-              <span class="p-tag">Docker</span>
-              <span class="p-tag">Kubernetes</span>
-              <span class="p-tag">GraphQL</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card reveal" data-delay="300">
-          <div class="project-card-inner">
-            <div class="project-header">
-              <div class="project-icon">🛡️</div>
-              <div class="project-links">
-                <a href="#" class="project-link-btn" aria-label="View Risk and Compliance Management project" title="Risk & Compliance Management Platform">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </div>
-            </div>
-            <h3 class="project-title">Risk & Compliance Management Platform</h3>
-            <p class="project-desc">Enterprise compliance monitoring system with automated risk assessment workflows, audit trail logging, and regulatory reporting dashboards for financial institutions.</p>
-            <ul class="project-features">
-              <li>✅ Risk Assessment Engine</li>
-              <li>✅ Audit Trail Logging</li>
-              <li>✅ Regulatory Reports</li>
-              <li>✅ Role-Based Access</li>
-            </ul>
-            <div class="project-tags">
-              <span class="p-tag">Spring Boot</span>
-              <span class="p-tag">Hibernate</span>
-              <span class="p-tag">Oracle</span>
-              <span class="p-tag">REST API</span>
-            </div>
-          </div>
-        </div>
-
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Rendered by data-loader.js -->
       </div>
     </div>
   </section>
@@ -692,62 +284,18 @@
   <section class="section cloud-section" id="cloud" aria-label="Cloud and DevOps expertise">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">06. Cloud & DevOps</span>
+        <span class="section-tag">06. Cloud &amp; DevOps</span>
         <h2 class="section-title">Cloud <span class="gradient-text">Expertise</span></h2>
         <p class="section-subtitle">Infrastructure at enterprise scale</p>
       </div>
       <div class="cloud-grid">
-        <div class="cloud-icons reveal">
-          <div class="cloud-icon-item" data-tooltip="Amazon Web Services">
-            <div class="cloud-icon-circle aws-icon">☁️</div>
-            <span>AWS</span>
-          </div>
-          <div class="cloud-icon-item" data-tooltip="Docker Containers">
-            <div class="cloud-icon-circle docker-icon">🐳</div>
-            <span>Docker</span>
-          </div>
-          <div class="cloud-icon-item" data-tooltip="Kubernetes Orchestration">
-            <div class="cloud-icon-circle k8s-icon">⚙️</div>
-            <span>Kubernetes</span>
-          </div>
-          <div class="cloud-icon-item" data-tooltip="Infrastructure as Code">
-            <div class="cloud-icon-circle tf-icon">🏗️</div>
-            <span>Terraform</span>
-          </div>
-          <div class="cloud-icon-item" data-tooltip="CI/CD Pipelines">
-            <div class="cloud-icon-circle jenkins-icon">🔧</div>
-            <span>Jenkins</span>
-          </div>
-          <div class="cloud-icon-item" data-tooltip="Event Streaming">
-            <div class="cloud-icon-circle kafka-icon">📨</div>
-            <span>Kafka</span>
-          </div>
+        <div class="cloud-icons reveal" id="cloudIcons">
+          <!-- Rendered by data-loader.js -->
         </div>
         <div class="cloud-bars reveal">
           <h3 class="cloud-bars-title">Core Proficiency</h3>
-          <div class="cloud-bar-item">
-            <div class="cloud-bar-label"><span>AWS</span><span>95%</span></div>
-            <div class="cloud-bar-track"><div class="cloud-bar-fill" data-width="95" style="--bar-color:#F59E0B"></div></div>
-          </div>
-          <div class="cloud-bar-item">
-            <div class="cloud-bar-label"><span>Java</span><span>95%</span></div>
-            <div class="cloud-bar-track"><div class="cloud-bar-fill" data-width="95" style="--bar-color:#2563EB"></div></div>
-          </div>
-          <div class="cloud-bar-item">
-            <div class="cloud-bar-label"><span>Spring Boot</span><span>95%</span></div>
-            <div class="cloud-bar-track"><div class="cloud-bar-fill" data-width="95" style="--bar-color:#10B981"></div></div>
-          </div>
-          <div class="cloud-bar-item">
-            <div class="cloud-bar-label"><span>React</span><span>85%</span></div>
-            <div class="cloud-bar-track"><div class="cloud-bar-fill" data-width="85" style="--bar-color:#06B6D4"></div></div>
-          </div>
-          <div class="cloud-bar-item">
-            <div class="cloud-bar-label"><span>Angular</span><span>90%</span></div>
-            <div class="cloud-bar-track"><div class="cloud-bar-fill" data-width="90" style="--bar-color:#EF4444"></div></div>
-          </div>
-          <div class="cloud-bar-item">
-            <div class="cloud-bar-label"><span>DevOps</span><span>85%</span></div>
-            <div class="cloud-bar-track"><div class="cloud-bar-fill" data-width="85" style="--bar-color:#8B5CF6"></div></div>
+          <div id="cloudBars">
+            <!-- Rendered by data-loader.js -->
           </div>
         </div>
       </div>
@@ -796,27 +344,8 @@
         <h2 class="section-title">Education <span class="gradient-text">&amp; Learning</span></h2>
         <p class="section-subtitle">Foundation of knowledge and continuous growth</p>
       </div>
-      <div class="education-grid">
-        <div class="edu-card reveal" data-delay="0">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-content">
-            <div class="edu-degree-badge">Master of Science</div>
-            <h3 class="edu-degree">Computer and Information Sciences</h3>
-            <p class="edu-school">Southern University and A&amp;M College</p>
-            <span class="edu-year">2021 – 2022</span>
-          </div>
-          <div class="edu-glow"></div>
-        </div>
-        <div class="edu-card reveal" data-delay="150">
-          <div class="edu-icon">🏫</div>
-          <div class="edu-content">
-            <div class="edu-degree-badge">Bachelor of Engineering</div>
-            <h3 class="edu-degree">Computer Science and Engineering</h3>
-            <p class="edu-school">Sathyabama University</p>
-            <span class="edu-year">2015 – 2019</span>
-          </div>
-          <div class="edu-glow"></div>
-        </div>
+      <div class="education-grid" id="educationGrid">
+        <!-- Rendered by data-loader.js -->
       </div>
     </div>
   </section>
@@ -831,20 +360,20 @@
       </div>
       <div class="contact-wrapper">
         <div class="contact-info reveal" data-delay="0">
-          <h3 class="contact-heading">Let's Build Something Amazing</h3>
-          <p class="contact-text">
+          <h3 class="contact-heading" id="contactHeading">Let's Build Something Amazing</h3>
+          <p class="contact-text" id="contactText">
             I'm actively seeking Senior Java / Full Stack Developer roles at innovative companies. 
             If you're looking for an engineer who ships scalable, cloud-native enterprise systems — let's talk.
           </p>
           <div class="contact-cards">
-            <a href="tel:+16097212009" class="contact-card" id="contactPhone" aria-label="Call (609) 721-2009">
+            <a href="tel:+16097212009" class="contact-card" id="contactPhone" aria-label="Call">
               <div class="contact-card-icon phone-icon">📞</div>
               <div class="contact-card-body">
                 <span class="contact-card-label">Phone</span>
                 <span class="contact-card-value">(609) 721-2009</span>
               </div>
             </a>
-            <a href="mailto:kvuc2021@gmail.com" class="contact-card" id="contactEmail" aria-label="Email kvuc2021@gmail.com">
+            <a href="mailto:kvuc2021@gmail.com" class="contact-card" id="contactEmail" aria-label="Email">
               <div class="contact-card-icon email-icon">✉️</div>
               <div class="contact-card-body">
                 <span class="contact-card-label">Email</span>
@@ -899,10 +428,10 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <a href="#hero" class="nav-logo footer-logo" aria-label="Back to top">
+          <a href="#hero" class="nav-logo footer-logo" id="footerLogo" aria-label="Back to top">
             <span class="logo-bracket">&lt;</span>VUK<span class="logo-bracket">/&gt;</span>
           </a>
-          <p class="footer-tagline">Senior Java Full Stack Developer &amp; AWS Certified Cloud Engineer</p>
+          <p class="footer-tagline" id="footerTagline">Senior Java Full Stack Developer &amp; AWS Certified Cloud Engineer</p>
         </div>
         <div class="footer-links">
           <a href="#about" class="footer-link">About</a>
@@ -913,7 +442,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Venkata Umesh Khande. Handcrafted with <span class="footer-heart">♥</span> &amp; precision. All rights reserved.</p>
+        <p id="footerCopy">&copy; 2025 Venkata Umesh Khande. Handcrafted with <span class="footer-heart">♥</span> &amp; precision. All rights reserved.</p>
         <a href="https://www.linkedin.com/in/venkata-u-khande-052477254/" target="_blank" rel="noopener noreferrer" class="footer-linkedin" aria-label="LinkedIn profile">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
@@ -926,8 +455,10 @@
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
+  <!-- Data Loader (must load before main.js) -->
+  <script src="data-loader.js"></script>
   <!-- EmailJS SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="main.js?v=2"></script>
+  <script src="main.js?v=3"></script>
 </body>
 </html>

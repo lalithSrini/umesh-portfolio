@@ -99,7 +99,8 @@
   const el = document.getElementById('heroTyped');
   if (!el) return;
 
-  const words = [
+  // Use words from data-loader if available, otherwise defaults
+  window.__VUK_TYPED_WORDS = window.__VUK_TYPED_WORDS || [
     'Java Developer',
     'AWS Cloud Engineer',
     'Full Stack Developer',
@@ -115,7 +116,8 @@
   const PAUSE = 2200;
 
   function type() {
-    const currentWord = words[wordIdx];
+    const words = window.__VUK_TYPED_WORDS;
+    const currentWord = words[wordIdx % words.length];
 
     if (!isDeleting) {
       el.textContent = currentWord.substring(0, charIdx + 1);
